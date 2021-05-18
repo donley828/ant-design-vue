@@ -11,7 +11,7 @@ function getMonthsLocale(value: moment.Moment): string[] {
   const current = value.clone();
   const localeData = value.localeData();
   const months = [];
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 11; i++) {
     current.month(i);
     months.push(localeData.monthsShort(current));
   }
